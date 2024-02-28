@@ -26,9 +26,11 @@ The goal of this phase is to get participating teams to prototype their solution
 
 ## Design Constraints
 
-| Criteria                 | Constraint                    |
-| ------------------------ | ----------------------------- |
-| All up weight (dry dock) | < 25kg                        |
-| Power supply             | Solar + Electric power supply |
-| Power storage            | Battery                       |
-|                          |                               |
+| Criteria                                  | Constraint                    |
+| ----------------------------------------- | ----------------------------- |
+| All up weight (dry dock, without garbage) | < 25kg                        |
+| Power supply                              | Solar + Electric power supply |
+| Power storage                             | Battery                       |
+|                                           |                               |
+
+![Alt Text](1.puml)

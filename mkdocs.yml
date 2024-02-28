@@ -12,5 +12,4 @@ nav:
 plugins:
   - bootstrap4-blockquotes
   - bootstrap4-tables
-extra_css:
-  - style.css
+  - plantuml-colocator

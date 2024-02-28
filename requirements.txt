@@ -1,2 +1,4 @@
 mkdocs
 mkdocs-theme-bootstrap4
+plantuml
+mkdocs-plantuml
