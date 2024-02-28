@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "6cebe5fec29078da",
+    "type": "split",
+    "children": [
+      {
+        "id": "e93a6279cab0e3c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90e490c0f89059b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8eb77cc9acdcb7f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d20aa5ba723e6dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5a59bcdf459d940",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "930fd425d6ab9fcd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fc91982d0a543175",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b2ccdff980bd0fa8",
+    "type": "split",
+    "children": [
+      {
+        "id": "65ca5471f7331849",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9844beacea88e272",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5e790bf8287db586",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7a0f8d09f877ec86",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "996d14579fcb9d0f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "90e490c0f89059b9",
+  "lastOpenFiles": [
+    "style.css",
+    "phase1/index.md",
+    "Classification of Pollution.md",
+    "nomenclature.md",
+    "phase1/evaluation-criteria.md",
+    "phase2/index.md",
+    "phase2/evaluation-criteria.md",
+    "index.md",
+    "phase2",
+    "phase1",
+    "Procurement.md"
+  ]
+}
