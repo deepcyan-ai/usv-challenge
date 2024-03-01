@@ -17,3 +17,9 @@ This open challenge is an effort for Indian colleges and universities to develop
 | ---- | ----- | -------------------------- |
 | 2024 | 1     | [Index](./phase1/index.md) |
 | 2024 | 2     | [Index](./phase2/index.md) |
+
+## Other reference
+
+1. [Procurement](./procurement.md)
+2. [Reporting](./reporting.md)
+3. [Eligibility](./eligibility.md)
