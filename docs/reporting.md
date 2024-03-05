@@ -27,6 +27,8 @@ Before executing a cleanup mission every team is expected to send a mission plan
 ### Live Tracking
 
 Teams may use a combination of SIM7600G-H + STM32
+Sample code and hardware setup available at
+https://www.micropeta.com/video65
 
 During Testing and Live environments vehicles will be expected to submit flight logs in the following format
 

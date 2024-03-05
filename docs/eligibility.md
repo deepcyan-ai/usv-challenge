@@ -4,3 +4,6 @@ Teams will be informed of their faculty advisor who will verify compliance with 
 
 [[ image ]]
 
+1. The competition is open to students from high school, undergraduate, and graduate levels.
+2. Teams must consist of 3-5 members.
+3. Each team must have a faculty advisor or mentor.
