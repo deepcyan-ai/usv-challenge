@@ -17,7 +17,11 @@ Promotion of the competition through various channels such as social media, univ
 |       |      |       |      | Finalists Notification                 |                                                                                                       |
 |       |      |       |      | Final Presentations and Demonstrations |                                                                                                       |
 |       |      |       |      | Winners Announcement                   |                                                                                                       |
+|       |      |       |      |                                        |                                                                                                       |
 
+# Rules
+
+See details [here](./Rules.md).
 # Sponsors
 
 # Phases
@@ -48,5 +52,5 @@ For inquiries and registration, please contact [Provide contact information].
 
 1. [Procurement](./procurement.md)
 2. [Reporting](./reporting.md)
-3. [Eligibility](./eligibility.md)
+3. [Eligibility](Eligibility.md)
 
