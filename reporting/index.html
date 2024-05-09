@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <title>Reporting - Water Pollution USV Open Challenge</title>
+      <script src="../dist/bundle.js"></script>
+    
+  </head>
+
+  <body class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="..">Water Pollution USV Open Challenge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top" aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbar-top" class="collapse navbar-collapse">
+              <nav class="nav">
+                <ul class="navbar-nav">
+                      <li >
+                        <a class="nav-link" href="..">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Phase 1 <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../phase1/" class="dropdown-item">About</a>
+  </li>
+                            
+  <li>
+    <a href="../phase1/evaluation-criteria/" class="dropdown-item">Evaluation Criteria</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Phase 2 <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../phase2/" class="dropdown-item">About</a>
+  </li>
+                            
+  <li>
+    <a href="../phase2/evaluation-criteria/" class="dropdown-item">Evaluation Criteria</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li >
+                        <a class="nav-link" href="../nomenclature/">Nomenclature</a>
+                      </li>
+                </ul>
+              </nav>
+
+          <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+          </ul>
+        </div>
+      </div>
+    </nav><div id="content" class="container">
+          
+      <div class="row">
+        <div class="col-md-9" role="main">
+
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+      
+        <li class="breadcrumb-item active" aria-current="page">
+          Reporting
+        </li>
+      
+    </ol>
+  </nav>
+
+
+<h1 id="reporting">Reporting</h1>
+<h3 id="mission-plan">Mission Plan</h3>
+<p>Before executing a cleanup mission every team is expected to send a mission plan in the following format</p>
+<pre><code>{
+  &quot;usv_id&quot;: &quot;&lt;id of the robot provided after registration&gt;&quot;
+  &quot;location&quot;: [{
+      &quot;timestamp&quot;: &quot;&lt;ISO8601 formatted string precise till milliseconds&gt;&quot;,
+      &quot;location&quot;: {
+        &quot;lat&quot;: &quot;&lt;WGS84 latitude precise up to 7 decimal places&gt;&quot;,
+        &quot;lng&quot;: &quot;&lt;WGS84 longitude precise up to 7 decimal places&gt;&quot;,
+        &quot;alt&quot;: &quot;&lt;altitude above MSL in meter precise upto 1 decimal place&gt;&quot;,
+      }
+    }, ...
+  ],
+  &quot;battery&quot;: [
+
+  ]
+</code></pre>
+<p><code>POST</code>ed to <code>http://utm.enaxi.in/v1/mission_plan</code></p>
+<h3 id="live-tracking">Live Tracking</h3>
+<p>Teams may use a combination of SIM7600G-H + STM32
+Sample code and hardware setup available at
+1. <a href="https://www.micropeta.com/video65">Blog: STM32 + SIM7600G-H</a>
+1. <a href="https://www.micropeta.com/SIM7500_SIM7600_SIM7800%20Series_MQTT_AT%20Command%20Manual_V1.00.pdf">AT MQTT Commands</a>
+2. <a href="https://mischianti.org/stm32-programming-stm32f1-via-usb-with-stm32duino-boot-loader-2/">STM32 Programming and bootloader</a>
+3. <a href="https://www.pcbway.com/blog/PCB_Design_Tutorial/Tutorial__How_to_Design_Your_Own_Custom_STM32_Microcontroller_Board.html">Designing a PCB based on STM32</a>
+4. <a href="https://www.waveshare.com/wiki/SIM7600G-H_4G_Module">SIM7600G-H module documentation</a></p>
+<p>During Testing and Live environments vehicles will be expected to submit flight logs in the following format</p>
+<pre><code>{
+  &quot;usv_id&quot;: &quot;&lt;id of the robot provided after registration&gt;&quot;
+  &quot;timestamp&quot;: &quot;&lt;ISO8601 formatted string precise till milliseconds&gt;&quot;,
+  &quot;location&quot;: {
+    &quot;lat&quot;: &quot;&lt;WGS84 latitude precise up to 7 decimal places&gt;&quot;,
+    &quot;lng&quot;: &quot;&lt;WGS84 longitude precise up to 7 decimal places&gt;&quot;,
+    &quot;alt&quot;: &quot;&lt;altitude above MSL in meter precise upto 1 decimal place&gt;&quot;,
+  }
+}
+</code></pre>
+<p>Such a tracking report must be <code>POST</code>ed  to <code>https://utm.enaxi.in/v1/tracking/</code> at a minimum frequency of 1 report per second. The API specification is available <a href="https://utm.enaxi.in/docs/">here</a>.</p>
+<h3 id="mission-logs">Mission Logs</h3>
+<pre><code>{
+  &quot;usv_id&quot;: &quot;&lt;id of the robot provided after registration&gt;&quot;
+  &quot;location&quot;: [{
+      &quot;timestamp&quot;: &quot;&lt;ISO8601 formatted string precise till milliseconds&gt;&quot;,
+      &quot;location&quot;: {
+        &quot;lat&quot;: &quot;&lt;WGS84 latitude precise up to 7 decimal places&gt;&quot;,
+        &quot;lng&quot;: &quot;&lt;WGS84 longitude precise up to 7 decimal places&gt;&quot;,
+        &quot;alt&quot;: &quot;&lt;altitude above MSL in meter precise upto 1 decimal place&gt;&quot;,
+      }
+    }, ...
+  ],
+  &quot;battery&quot;: [
+
+  ]
+</code></pre>
+<p>Mission Logs report must be <code>POST</code>ed  to <code>https://utm.enaxi.in/v1/mission_log/</code> directly after each mission is completed. The API specification is available <a href="https://utm.enaxi.in/docs/">here</a>.</p>
+<h3 id="video-streaming">Video Streaming</h3>
+<p>SIM7600G-H + Raspberry Pi</p></div>
+        <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+      <span class="fa fa-angle-down"></span>
+    </button>
+  </div>
+
+  <div id="toc-collapse" class="navbar-collapse collapse card">
+    <ul class="nav flex-column bs-sidenav">
+        <li class="nav-item main"><a class="nav-link" href="#reporting">Reporting</a></li>
+          <li class="nav-item">
+            <a href="#mission-plan" class="nav-link">Mission Plan</a>
+          </li>
+          <li class="nav-item">
+            <a href="#live-tracking" class="nav-link">Live Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a href="#mission-logs" class="nav-link">Mission Logs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#video-streaming" class="nav-link">Video Streaming</a>
+          </li>
+    </ul>
+  </div>
+</div></div>
+      </div>
+        </div>
+
+    <footer class="col-md-12">
+      <hr>
+      <div class="container">
+      </div>
+    </footer>
+      <script>
+        var base_url = "..";
+      </script>
+
+    
+  </body>
+</html>
+
